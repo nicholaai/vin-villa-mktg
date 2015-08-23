@@ -1,0 +1,26 @@
+{
+  "name": "vin-villa-mktg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicholaai/vin-villa-mktg.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicholaai/vin-villa-mktg/issues"
+  },
+  "homepage": "https://github.com/nicholaai/vin-villa-mktg#readme",
+  "dependencies": {
+    "browserify": "^11.0.1",
+    "react": "^0.13.3",
+    "react-router": "^0.13.3",
+    "webpack": "^1.11.0"
+  }
+}
