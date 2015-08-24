@@ -12,7 +12,7 @@ var Music = React.createClass({
   },
   render: function () {
     var soundCloudPlayers = this.state.soundCloudUrls.map((url) => {
-      return(
+      return (
         <div>
           <SoundCloud key={url} id={url} url={url} />
         </div>
