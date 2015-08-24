@@ -19,9 +19,11 @@
   "homepage": "https://github.com/nicholaai/vin-villa-mktg#readme",
   "dependencies": {
     "browserify": "^11.0.1",
+    "firebase": "^2.2.9",
     "react": "^0.13.3",
     "react-router": "^0.13.3",
     "react-soundcloud-widget": "^2.0.1",
+    "reactfire": "^0.5.0",
     "webpack": "^1.11.0"
   },
   "devDependencies": {
