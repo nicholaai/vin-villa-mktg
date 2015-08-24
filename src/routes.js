@@ -3,6 +3,12 @@ var Main = require('./containers/main');
 var Router = require('react-router');
 var DefaultRoute = Router.DefaultRoute;
 var Route = Router.Route;
+var Music = require('./containers/Music');
+var Video = require('./containers/Video');
+var Photo = require('./containers/Photo');
+var Show = require('./containers/Show');
+var About = require('./containers/About');
+
 
 module.exports = (
   <Route name="app" path="/" handler={Main}>

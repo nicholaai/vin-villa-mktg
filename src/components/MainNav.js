@@ -10,11 +10,11 @@ var MainNav = React.createClass({
         <nav className="navbar navbar-default" role="navigation">
           <div className="col-sm-12 text-center" style={{marginTop: 15}}>
             <ul className="testing">
-              <li><Link>Music</Link></li>
-              <li><Link>Video</Link></li>
-              <li><Link>Photo</Link></li>
-              <li><Link>Show</Link></li>
-              <li><Link>About</Link></li>
+              <li><Link to="music">Music</Link></li>
+              <li><Link to="video">Video</Link></li>
+              <li><Link to="photo">Photo</Link></li>
+              <li><Link to="show">Show</Link></li>
+              <li><Link to="about">About</Link></li>
             </ul>
           </div>
         </nav>
