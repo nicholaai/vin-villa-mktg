@@ -6,7 +6,6 @@ var Photo = React.createClass({
   render: function() {
     return (
       <div>
-        <h1>Photo</h1>
         <PhotoGallery />
       </div>
     );

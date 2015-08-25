@@ -1,10 +1,39 @@
-.testing {
-  color: green;
-  list-style-type: none;
-  display: inline-flex;
-  padding: 0;
+html, body, #app {
+  min-height: 100%;
+  height: 100%;
   margin: 0;
 }
-.active {
-  color: red;
+ul.nav.navbar-nav {
+  display: inline-block;
+}
+.navbar-brand {
+  padding: 0;
+  margin-left: 0!important;
+}
+.homeimg {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+Nav {
+  background-color: #fff;
+  padding: 0;
+}
+.resetNav {
+  background-color: #fff;
+  border-color: #fff;
+}
+/*.container {
+  text-align: center;
+}*/
+@media (min-width: 768px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
 }

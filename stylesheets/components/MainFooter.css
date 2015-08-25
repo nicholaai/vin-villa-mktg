@@ -1,0 +1,9 @@
+.footerList a {
+  margin-right: 20px;
+}
+.footerList {
+  display: inline-flex;
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0;
+}
