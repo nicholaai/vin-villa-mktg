@@ -19,11 +19,9 @@
   background: radial-gradient(ellipse at center, rgba(25,25,25,0.5) 0%,rgba(25,25,25,0.25) 100%);
   transition: opacity 0.3s ease-in;
 }
-
 .react-lightbox-overlay-open {
   opacity: 1;
 }
-
 .react-lightbox-carousel-image {
   position: absolute;
   width: 400px;

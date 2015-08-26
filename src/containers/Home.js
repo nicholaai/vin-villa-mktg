@@ -3,7 +3,6 @@ var Router = require('react-router');
 import { Row, Col } from 'react-bootstrap';
 
 var Home = React.createClass({
-
   render: function() {
     return (
       <Row className="show-grid">
@@ -15,7 +14,6 @@ var Home = React.createClass({
       </Row>
     );
   }
-
 });
 
 module.exports = Home;

@@ -17,7 +17,7 @@ var MainNav = React.createClass({
         <Navbar
           brand={<Link to="home"><img src={this.state.brandLogo}></img></Link>}
           toggleNavKey={0}
-          className="resetNav">
+          className="MainNav">
           <Nav className="navList"  eventKey={0}> {/* This is the eventKey referenced */}
             <NavItemLink to="music" eventKey={1}>Music</NavItemLink>
             <NavItemLink to="video" eventKey={2}>Video</NavItemLink>
