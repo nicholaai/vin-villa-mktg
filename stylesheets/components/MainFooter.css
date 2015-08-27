@@ -1,9 +1,18 @@
-.footerList a {
-  margin-right: 20px;
+.navbar-default .navbar-nav>li>a {
+  color: #000;
 }
-.footerList {
+ul.nav.navbar-nav li a {
+  padding-bottom: 5px;
+}
+.footer-list {
   display: inline-flex;
-  text-decoration: none;
-  list-style-type: none;
-  padding: 0;
+  border-top: 1px solid #000;
+}
+.navbar-fixed-bottom {
+  padding-bottom: 3%;
+  text-align: center;
+}
+.navbar-default {
+  background-color: #FFF;
+  border-color: #FFF;
 }

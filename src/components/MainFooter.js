@@ -1,34 +1,31 @@
 var React = require('react');
 import '../../stylesheets/components/MainFooter.css';
-import { Row, Col } from 'react-bootstrap';
 
 var MainFooter = React.createClass({
-
+  getInitialState: function() {
+    return {
+      websites: ['https://www.facebook.com/pages/Vin-Villa/161888177250425?fref=ts',
+                 'https://twitter.com/VinnyDukeVilla',
+                 'https://instagram.com/vinnydukevilla',
+                 'https://soundcloud.com/vin-villa'],
+      email:     'mailto:VinVillaMusic@gmail.com'
+    }
+  },
   render: function() {
     return (
-      <Row className="show-grid">
-        <Col sm={12} className="text-center">
-          <hr></hr>
-          <ul className="footerList">
-            <li><a
-                  href="https://www.facebook.com/pages/Vin-Villa/161888177250425?fref=ts"
-                  target="_blank">F</a></li>
-            <li><a
-                  href="https://twitter.com/VinnyDukeVilla"
-                  target="_blank">T</a></li>
-            <li><a
-                  href="https://instagram.com/vinnydukevilla"
-                  target="_blank">I</a></li>
-            <li><a
-                  href="https://soundcloud.com/vin-villa"
-                  target="_blank">S</a></li>
-                <li><a href="#">E</a></li>
+      <nav className="navbar navbar-fixed-bottom navbar-default">
+        <div className="container">
+          <ul className="nav navbar-nav footer-list">
+            <li><a href={this.state.websites[0]} target="_blank"><i className="fa fa-facebook fa-lg"></i></a></li>
+            <li><a href={this.state.websites[1]} target="_blank"><i className="fa fa-twitter fa-lg"></i></a></li>
+            <li><a href={this.state.websites[2]} target="_blank"><i className="fa fa-instagram fa-lg"></i></a></li>
+            <li><a href={this.state.websites[3]} target="_blank"><i className="fa fa-soundcloud fa-lg"></i></a></li>
+            <li><a href={this.state.email}><i className="fa fa-envelope fa-lg"></i></a></li>
           </ul>
-        </Col>
-      </Row>
+        </div>
+      </nav>
     );
   }
-
 });
 
 module.exports = MainFooter;
