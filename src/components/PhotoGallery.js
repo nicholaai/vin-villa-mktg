@@ -14,11 +14,7 @@ var PhotoGallery = React.createClass({
   },
   render: function() {
     return (
-      <div>
-        <div className="box">
-          <Lightbox pictures={this.state.pictures} />
-        </div>
-      </div>
+      <Lightbox pictures={this.state.pictures} />
     );
   }
 });

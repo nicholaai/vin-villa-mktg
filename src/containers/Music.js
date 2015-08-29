@@ -13,16 +13,15 @@ var Music = React.createClass({
   render: function () {
     var soundCloudPlayers = this.state.soundCloudUrls.map((url) => {
       return (
-        <div>
+        <div className="soundcloud-player center-block">
           <SoundCloud key={url} id={url} url={url} />
         </div>
-      )
+      );
     });
     return (
       <div>
         {soundCloudPlayers}
       </div>
-
     );
   }
 });

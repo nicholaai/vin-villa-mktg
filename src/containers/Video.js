@@ -15,7 +15,6 @@ var Video = React.createClass({
     }
   },
   handleSelect: function(url) {
-    console.log(url);
     this.setState({currentUrl: url});
   },
   render: function() {

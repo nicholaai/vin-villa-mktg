@@ -5,9 +5,7 @@ import '../../stylesheets/components/PhotoGallery.css';
 var Photo = React.createClass({
   render: function() {
     return (
-      <div>
-        <PhotoGallery />
-      </div>
+      <PhotoGallery />
     );
   }
 });

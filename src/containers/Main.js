@@ -9,7 +9,11 @@ var Main = React.createClass({
     return (
       <div className="wrapper">
         <MainNav />
-        <RouteHandler />
+        <section className="content">
+          <div className="content-body">
+            <RouteHandler />
+          </div>
+        </section>
         <MainFooter />
       </div>
     );
