@@ -1,7 +1,8 @@
-.main-nav {
+/*.main-nav {
   background-color: #fff;
   border-color: #fff;
-  margin-top: 5%;
+  padding-top: 5%;
+  height: 7.500em
 }
 @media (min-width: 768px) {
     .navbar .navbar-nav {
@@ -33,4 +34,4 @@ ul.nav.navbar-nav li.active a {
 .navbar-default .navbar-nav>.active>a:focus {
   color: black;
   background-color: white;
-}
+}*/

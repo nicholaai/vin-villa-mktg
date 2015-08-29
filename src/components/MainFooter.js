@@ -13,17 +13,17 @@ var MainFooter = React.createClass({
   },
   render: function() {
     return (
-      <nav className="navbar navbar-fixed-bottom navbar-default">
-        <div className="container">
-          <ul className="nav navbar-nav footer-list">
-            <li><a href={this.state.websites[0]} target="_blank"><i className="fa fa-facebook fa-lg"></i></a></li>
-            <li><a href={this.state.websites[1]} target="_blank"><i className="fa fa-twitter fa-lg"></i></a></li>
-            <li><a href={this.state.websites[2]} target="_blank"><i className="fa fa-instagram fa-lg"></i></a></li>
-            <li><a href={this.state.websites[3]} target="_blank"><i className="fa fa-soundcloud fa-lg"></i></a></li>
-            <li><a href={this.state.email}><i className="fa fa-envelope fa-lg"></i></a></li>
-          </ul>
+      <footer className="footer navbar-default">
+        <div className="container text-center">
+         <ul className="nav navbar-nav footer-list">
+           <li><a href={this.state.websites[0]} target="_blank"><i className="fa fa-facebook fa-lg"></i></a></li>
+           <li><a href={this.state.websites[1]} target="_blank"><i className="fa fa-twitter fa-lg"></i></a></li>
+           <li><a href={this.state.websites[2]} target="_blank"><i className="fa fa-instagram fa-lg"></i></a></li>
+           <li><a href={this.state.websites[3]} target="_blank"><i className="fa fa-soundcloud fa-lg"></i></a></li>
+           <li><a href={this.state.email}><i className="fa fa-envelope fa-lg"></i></a></li>
+         </ul>
         </div>
-      </nav>
+      </footer>
     );
   }
 });

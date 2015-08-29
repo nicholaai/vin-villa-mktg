@@ -1,8 +1,97 @@
-* {
-  font-family: 'Century Gothic', 'Didact Gothic', sans-serif;
+/* Reset */
+html, body, #app { height: 100%; margin: 0; padding: 0;}
+
+/* Essentials */
+.wrapper { display: table; }
+.content { display: table-row; height: 100%; }
+.content-body { display: table-cell; }
+
+/* Aestetics */
+.wrapper { width: 100%; height: 100%; padding: 0;}
+.header { padding: 100px 20px 20px; background: #FFF; }
+.footer { padding: 60px 20px; background: #FFF; }
+.content-body { padding: 20px; background: #FFF; vertical-align: middle;}
+
+
+
+
+ /*main navigation */
+.navbar-brand {
+    position: absolute;
+    width: 4%;
+    padding: 0;
+    margin-left: 0!important;
 }
-html, body {
-  min-height: 100%;
-  height: 100%;
-  margin: 0;
+.navbar {
+  margin-bottom: 0;
+  border: none;
+}
+ul.nav.navbar-nav li.active a {
+  border-bottom: 1px solid black;
+}
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+  color: black;
+  background-color: white;
+}
+@media (min-width: 768px) {
+    .navbar-nav {
+        display: inline-flex;
+        display: -webkit-inline-box;
+        display: -webkit-inline-flex;
+        display: -moz-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-align-self: auto;
+        float: none;
+        vertical-align: top;
+    }
+    .navbar-collapse {
+        text-align: center;
+    }
+    .my-logo-text {
+      display: none;
+    }
+}
+@media (max-width: 767px) {
+  ul.nav.navbar-nav {
+    text-align: center;
+  }
+  .navbar-brand {
+      position: absolute;
+      width: 17%;
+      left: 15px;
+      padding-top: 15px;
+  }
+  .navbar-default .navbar-brand {
+    color: #000;
+  }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #000;
+  }
+  .navbar-default .navbar-toggle {
+    border: none;
+  }
+  .my-logo {
+    display: none!important;
+  }
+  .footer {
+    padding: 0 20px;
+  }
+  .header {
+    padding: 0;
+  }
+}
+/* footer */
+.footer-list {
+  display: inline-flex;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-self: auto;
+  border-top: 1px solid #000;
 }

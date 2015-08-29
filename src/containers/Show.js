@@ -10,7 +10,6 @@ var Show = React.createClass({
           enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</p>
         <ShowEmailSignup />
       </div>
-
     );
   }
 });
