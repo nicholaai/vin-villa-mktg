@@ -1,5 +1,6 @@
 var React = require('react');
 var SoundCloud = require('react-soundcloud-widget');
+import '../../stylesheets/containers/Music.css';
 
 var Music = React.createClass({
   getInitialState: function() {
@@ -20,7 +21,18 @@ var Music = React.createClass({
     });
     return (
       <div>
-        {soundCloudPlayers}
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6 override-padding-right">
+              <img
+                src="img/albumArtwork.gif"
+                className="img-responsive album-artwork" />
+            </div>
+            <div className="col-md-6 override-padding-left">
+              {soundCloudPlayers}
+            </div>
+          </div>
+        </div>
       </div>
     );
   }

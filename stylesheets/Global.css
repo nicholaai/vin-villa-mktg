@@ -1,5 +1,5 @@
 /* Reset */
-html, body, #app { height: 100%; margin: 0; padding: 0;}
+html, body, #app { height: 100%; margin: 0; padding: 0; overflow-x: hidden;}
 
 /* Essentials */
 .wrapper { display: table; }
@@ -12,12 +12,6 @@ html, body, #app { height: 100%; margin: 0; padding: 0;}
 .footer { padding: 60px 20px; background: #FFF; }
 .content-body { padding: 20px; background: #FFF; vertical-align: middle;}
 
-/* music */
-.soundcloud-player {
-  margin-bottom: 20px;
-  width: 50%;
-}
-
  /* navigation */
 .navbar-default .navbar-nav>li>a,
 .navbar-default .navbar-nav>.active>a,
@@ -29,17 +23,17 @@ html, body, #app { height: 100%; margin: 0; padding: 0;}
 
 /* media queries */
 @media (min-width: 768px) {
-    .navbar-nav {
-        display: inline-flex;
-        display: -webkit-inline-box;
-        display: -webkit-inline-flex;
-        display: -moz-inline-box;
-        display: -ms-inline-flexbox;
-        display: inline-flex;
-        -webkit-align-self: auto;
-        float: none;
-        vertical-align: top;
-    }
+  .navbar-nav {
+    display: inline-flex;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -moz-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-align-self: auto;
+    float: none;
+    vertical-align: top;
+  }
 }
 @media (max-width: 767px) {
   .footer {
@@ -47,8 +41,5 @@ html, body, #app { height: 100%; margin: 0; padding: 0;}
   }
   .header {
     padding: 0;
-  }
-  .soundcloud-player {
-    width: 100%;
   }
 }

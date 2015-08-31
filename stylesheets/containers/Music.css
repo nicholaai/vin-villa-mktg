@@ -1,0 +1,29 @@
+/* music */
+.soundcloud-player {
+  float: left;
+  width: 100%;
+}
+.album-artwork {
+  display: block;
+  margin-left: auto;
+}
+@media (max-width: 767px) {
+  .soundcloud-player {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .override-padding-left {
+    padding-left: 7px;
+  }
+  .override-padding-right {
+    padding-right: 7px;
+  }
+}
+@media (max-width: 991px) {
+  .album-artwork {
+    display: block;
+    margin-right:auto;
+    margin-left: auto;
+  }
+}
