@@ -1,6 +1,8 @@
 var React = require('react');
 var ReactFireMixin = require('reactfire');
 var Firebase = require('firebase');
+import '../../stylesheets/components/ShowEmailSignup.css';
+
 
 var ShowEmailSignup = React.createClass({
   mixins: [ReactFireMixin],
@@ -21,10 +23,10 @@ var ShowEmailSignup = React.createClass({
           <div className="form-group">
             <input
               type="email"
-              className="form-control"
+              className="form-control tour-email"
               ref="email"
               placeholder="Your Email" />
-            <button type="submit" className="btn btn-default center-block">Sign Up</button>
+            <button type="submit" className="btn btn-default center-block tour-btn">Sign Up</button>
           </div>
         </form>
       </div>

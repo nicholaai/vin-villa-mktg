@@ -1,0 +1,15 @@
+.form-group {
+  padding: 7px;
+}
+.form-control {
+  color: #000;
+}
+.tour-email {
+  border: 1px solid #333;
+}
+.tour-btn {
+  color: #000;
+  border-color: #000;
+  margin-top: 1px;
+  padding: 6px 30px;
+}

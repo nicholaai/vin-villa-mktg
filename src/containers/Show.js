@@ -6,10 +6,16 @@ var Show = React.createClass({
     return (
       <div className="container">
         <div className="row">
-          <div className="col-md-6 col-md-offset-3">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-              do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</p>
+          <div className="col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2">
+            <div className="text-center">
+              <h3>Tour coming soon.</h3>
+              <p>Sign up now for updates on new music, tour dates, and news.</p>
+              <p style={{fontSize: '12'}}>(We will never send spam)</p>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-sm-4 col-sm-offset-4 col-xs-8 col-xs-offset-2">
             <ShowEmailSignup />
           </div>
         </div>
