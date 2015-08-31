@@ -3,7 +3,7 @@ var Link = require('react-router').Link;
 var ReactRouterBootstrap = require('react-router-bootstrap')
   , NavItemLink = ReactRouterBootstrap.NavItemLink;
 import { Navbar, Nav } from 'react-bootstrap';
-import '../../stylesheets/Global.css';
+import '../../stylesheets/components/MainNav.css';
 
 var MainNav = React.createClass({
   getInitialState: function() {

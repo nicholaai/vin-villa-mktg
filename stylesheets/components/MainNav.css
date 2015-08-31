@@ -1,37 +1,44 @@
-/*.main-nav {
-  background-color: #fff;
-  border-color: #fff;
-  padding-top: 5%;
-  height: 7.500em
+.navbar-brand {
+    position: absolute;
+    width: 4%;
+    padding: 0;
+    margin-left: 0!important;
+}
+.navbar {
+  margin-bottom: 0;
+  border: none;
+}
+ul.nav.navbar-nav li.active a {
+  border-bottom: 1px solid black;
 }
 @media (min-width: 768px) {
-    .navbar .navbar-nav {
-        display: inline-flex;
-        float: none;
-        vertical-align: top;
-    }
-    .navbar .navbar-collapse {
+    .navbar-collapse {
         text-align: center;
+    }
+    .my-logo-text {
+      display: none;
     }
 }
 @media (max-width: 767px) {
   ul.nav.navbar-nav {
     text-align: center;
   }
+  .navbar-brand {
+      position: absolute;
+      width: 17%;
+      left: 15px;
+      padding-top: 15px;
+  }
+  .navbar-default .navbar-brand {
+    color: #000;
+  }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #000;
+  }
+  .navbar-default .navbar-toggle {
+    border: none;
+  }
+  .my-logo {
+    display: none!important;
+  }
 }
-.navbar-brand {
-    position: absolute;
-    width: 4%;
-    left: 0;
-    padding: 0;
-    margin-left: 0!important;
-}
-ul.nav.navbar-nav li.active a {
-  border-bottom: 1px solid black;
-}
-.navbar-default .navbar-nav>.active>a,
-.navbar-default .navbar-nav>.active>a:hover,
-.navbar-default .navbar-nav>.active>a:focus {
-  color: black;
-  background-color: white;
-}*/

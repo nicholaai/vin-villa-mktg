@@ -1,36 +1,75 @@
-.react-lightbox-image {
-  float: left;
-  width: 200px;
-  height: 200px;
-  background-size: cover;
-  margin: 10px;
+.gallery-image {
   cursor: pointer;
+  padding: 7px;
 }
-.react-lightbox-image:hover {
+.gallery-image:hover {
   box-shadow: 0 0 1em #888888;
 }
-.react-lightbox-overlay {
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(ellipse at center, rgba(25,25,25,0.5) 0%,rgba(25,25,25,0.25) 100%);
-  transition: opacity 0.3s ease-in;
+.lightbox-image {
+    position: absolute;
+    top: 0;
+    box-shadow: 0 1px 5px #333;
+    z-index: 101;
+    animation: fadeinImg .3s ease-in;
 }
-.react-lightbox-overlay-open {
-  opacity: 1;
+.lightbox-overlay {
+    background: black;
+    opacity: 0.75;
+    animation: fadein .3s ease-in;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 100;
 }
-.react-lightbox-carousel-image {
-  position: absolute;
-  width: 400px;
-  height: 400px;
-  top:0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  background-size: cover;
-  box-shadow: 0 0 40px rgba(25, 25, 25, 0.5);
+@media (min-width: 1200px) {
+  .gallery-image {
+    float: left;
+  }
+}
+@media (max-width: 1200px) {
+  .lightbox-image {
+    top: 25%;
+  }
+}
+@media (max-width: 991px) {
+  .lightbox-image {
+    right: -25%;
+    width: 145%;
+  }
+}
+@media (max-width: 767px) {
+  .lightbox-image {
+    width: 95%;
+    right: 3%;
+  }
+}
+@-webkit-keyframes fadeinImg {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@-moz-keyframes fadeinImg {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeinImg {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: .75; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: .75; }
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: .75; }
 }

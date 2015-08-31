@@ -1,7 +1,6 @@
 var React = require('react');
 var YouTube = require('react-youtube');
 var VideoPicker = require('../components/VideoPicker');
-import { Col, Row } from 'react-bootstrap';
 
 var Video = React.createClass({
   getInitialState: function() {
@@ -19,19 +18,18 @@ var Video = React.createClass({
   },
   render: function() {
     return (
-      <div>
-        <Row className="show-grid text-center">
-          <Col sm={12}>
+      <div className="container">
+        <div className="row">
+          <div className="col-sm-12 text-center">
             <YouTube url={this.state.currentUrl} />
-          </Col>
-        </Row>
-        <Row className="show-grid text-center">
-          <Col sm={12}>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-sm-12 text-center">
             <VideoPicker videos={this.state.videos} onVideoSelect={this.handleSelect} />
-          </Col>
-        </Row>
+          </div>
+        </div>
       </div>
-
     );
   }
 });

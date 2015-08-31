@@ -1,19 +1,10 @@
-/*.navbar-default .navbar-nav>li>a {
-  color: #000;
-}
-ul.nav.navbar-nav li a {
-  padding-bottom: 5px;
-}
 .footer-list {
   display: inline-flex;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-self: auto;
   border-top: 1px solid #000;
 }
-.navbar-fixed-bottom {
-  padding-bottom: 3%;
-  text-align: center;
-  height: 7.500em;
-}
-.navbar-default {
-  background-color: #FFF;
-  border-color: #FFF;
-}*/

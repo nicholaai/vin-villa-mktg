@@ -1,20 +1,41 @@
-var React = require('react');
-var Lightbox = require('react-lightbox');
+var React = require('react/addons');
+var Lightbox = require('./Lightbox');
+var LightboxTrigger = require('./LightboxTrigger');
+var LightboxModal = require('./LightboxModal');
+import '../../stylesheets/components/PhotoGallery.css';
 
 var PhotoGallery = React.createClass({
   getInitialState: function() {
     return {
       pictures: [
-        'http://cdn.pitchfork.com/tracks/14505/homepage_large.c6c55cb2.jpg',
-        'http://www.billboard.com/files/styles/promo_650/public/media/drake_press-2013-650a.jpg',
-        'http://assets.vg247.com/current//2015/02/kanye-west.jpg',
-        'http://c.directlyrics.com/img/upload/lana-del-rey-big-eyes.jpg'
+        {thumbnail: 'img/vinThumb1.gif', large: 'img/vin1.gif'},
+        {thumbnail: 'img/vinThumb2.gif', large: 'img/vin2.gif'},
+        {thumbnail: 'img/vinThumb3.gif', large: 'img/vin3.gif'},
+        {thumbnail: 'img/vinThumb4.gif', large: 'img/vin4.gif'}
       ]
     }
   },
   render: function() {
+    var lightBoxes = this.state.pictures.map(function (picture, i) {
+      return (
+        <Lightbox key={i}>
+          <LightboxTrigger>
+            <img src={picture.thumbnail} className="center-block img-responsive gallery-image"></img>
+          </LightboxTrigger>
+          <LightboxModal>
+            <img src={picture.large} className="img-responsive"></img>
+          </LightboxModal>
+        </Lightbox>
+      );
+    })
     return (
-      <Lightbox pictures={this.state.pictures} />
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-6 col-sm-offset-3 col-xs-12">
+            {lightBoxes}
+          </div>
+        </div>
+      </div>
     );
   }
 });

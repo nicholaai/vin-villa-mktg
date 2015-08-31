@@ -18,21 +18,7 @@ html, body, #app { height: 100%; margin: 0; padding: 0;}
   width: 50%;
 }
 
-
- /*main navigation */
-.navbar-brand {
-    position: absolute;
-    width: 4%;
-    padding: 0;
-    margin-left: 0!important;
-}
-.navbar {
-  margin-bottom: 0;
-  border: none;
-}
-ul.nav.navbar-nav li.active a {
-  border-bottom: 1px solid black;
-}
+ /* navigation */
 .navbar-default .navbar-nav>li>a,
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:hover,
@@ -40,6 +26,8 @@ ul.nav.navbar-nav li.active a {
   color: black;
   background-color: white;
 }
+
+/* media queries */
 @media (min-width: 768px) {
     .navbar-nav {
         display: inline-flex;
@@ -52,35 +40,8 @@ ul.nav.navbar-nav li.active a {
         float: none;
         vertical-align: top;
     }
-    .navbar-collapse {
-        text-align: center;
-    }
-    .my-logo-text {
-      display: none;
-    }
 }
 @media (max-width: 767px) {
-  ul.nav.navbar-nav {
-    text-align: center;
-  }
-  .navbar-brand {
-      position: absolute;
-      width: 17%;
-      left: 15px;
-      padding-top: 15px;
-  }
-  .navbar-default .navbar-brand {
-    color: #000;
-  }
-  .navbar-default .navbar-toggle .icon-bar {
-    background-color: #000;
-  }
-  .navbar-default .navbar-toggle {
-    border: none;
-  }
-  .my-logo {
-    display: none!important;
-  }
   .footer {
     padding: 0 20px;
   }
@@ -90,15 +51,4 @@ ul.nav.navbar-nav li.active a {
   .soundcloud-player {
     width: 100%;
   }
-}
-/* footer */
-.footer-list {
-  display: inline-flex;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-self: auto;
-  border-top: 1px solid #000;
 }

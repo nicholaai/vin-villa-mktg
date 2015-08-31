@@ -25,8 +25,7 @@ var About = React.createClass({
               Victory Is Necessary, and CApable</strong>.<br/><br/>
               Life changed forever in the summer of 2012 when Vin received
               a letter of acceptance to the <strong>University of Southern California</strong>.
-              Capitalizing on this tremendous opportunity, he turned his focus
-              to his studies and removed his catalogue from the internet. Vin
+              Capitalizing on this tremendous opportunity, Vin
               earned his Bachelor's Degree with a double major in <strong>Music
               Industry</strong> and <strong>American Studies</strong> December 2014.
              </p>

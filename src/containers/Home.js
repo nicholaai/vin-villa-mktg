@@ -6,7 +6,7 @@ var Home = React.createClass({
   render: function() {
     return (
       <img
-        src="http://cdn.narcity.com/wp-content/uploads/sites/2/2015/01/the-weeknd2.jpg"
+        src="img/vin1.gif"
         className="img-responsive center-block" />
     );
   }
