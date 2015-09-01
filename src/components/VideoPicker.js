@@ -1,4 +1,5 @@
 var React = require('react');
+import '../../stylesheets/components/VideoPicker.css';
 
 var VideoPicker = React.createClass({
   propTypes: {
@@ -10,13 +11,14 @@ var VideoPicker = React.createClass({
   },
   render: function() {
     var youTubeThumbnails = this.props.videos.map((video) => {
+      var videoImage = 'https://img.youtube.com/vi/' + video.code + '/mqdefault.jpg';
       return (
-        <div>
-          <button
-            className="btn btn-default"
-            onClick={this.handleClick.bind(this, video.url)}>{video.name}</button>
+        <div
+          className="youtube-thumbnail-holder center-block"
+          onClick={this.handleClick.bind(this, video.url)}>
+            <img src={videoImage} className="youtube-thumbnail-image" />
         </div>
-      )
+      );
     });
     return (
       <div>

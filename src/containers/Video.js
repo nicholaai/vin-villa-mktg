@@ -6,9 +6,9 @@ var Video = React.createClass({
   getInitialState: function() {
     return {
       videos: [
-        {name: 'video', url: 'https://www.youtube.com/watch?v=X6YRfaRvUHo'},
-        {name: 'video 2', url: 'https://www.youtube.com/watch?v=jRIqigm2RmU'},
-        {name: 'video 3', url: 'https://www.youtube.com/watch?v=lIZKE5MxukE'}
+        {code: 'X6YRfaRvUHo', url: 'https://www.youtube.com/watch?v=X6YRfaRvUHo'},
+        {code: 'jRIqigm2RmU', url: 'https://www.youtube.com/watch?v=jRIqigm2RmU'},
+        {code: 'lIZKE5MxukE', url: 'https://www.youtube.com/watch?v=lIZKE5MxukE'}
       ],
       currentUrl: 'https://www.youtube.com/watch?v=X6YRfaRvUHo'
     }
@@ -20,12 +20,14 @@ var Video = React.createClass({
     return (
       <div className="container">
         <div className="row">
-          <div className="col-sm-12 text-center">
-            <YouTube url={this.state.currentUrl} />
+          <div className="col-sm-8 col-sm-offset-2 ">
+            <div className="embed-responsive embed-responsive-16by9">
+              <YouTube url={this.state.currentUrl} />
+            </div>
           </div>
         </div>
         <div className="row">
-          <div className="col-sm-12 text-center">
+          <div className="col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
             <VideoPicker videos={this.state.videos} onVideoSelect={this.handleSelect} />
           </div>
         </div>

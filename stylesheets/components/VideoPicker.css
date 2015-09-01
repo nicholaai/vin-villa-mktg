@@ -1,0 +1,29 @@
+.youtube-thumbnail-holder {
+  width: 33%;
+  height: auto;
+  float: left;
+  margin-top: 25px;
+  padding: 7px;
+  border: 0;
+  cursor: pointer;
+}
+.youtube-thumbnail-holder:hover,
+.youtube-thumbnail-holder:focus {
+    box-shadow: 0 0 1em #888888;
+}
+.youtube-thumbnail-image {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 767px) {
+  .youtube-thumbnail-holder {
+    width: 50%;
+    margin-top: 0;
+  }
+}
+@media (max-width: 550px) {
+  .youtube-thumbnail-holder {
+    width: 99%;
+    float: none;
+  }
+}
