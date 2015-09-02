@@ -27,3 +27,8 @@
     float: none;
   }
 }
+@media (max-height: 932px ) {
+  .embed-responsive.embed-responsive-16by9 {
+  padding-bottom: 46.25%;
+  }
+}

@@ -1,3 +1,7 @@
+.header {
+  padding: 100px 20px 20px;
+  background: #FFF;
+}
 .navbar-brand {
     position: absolute;
     width: 4%;
@@ -10,6 +14,11 @@
 }
 ul.nav.navbar-nav li.active a {
   border-bottom: 1px solid black;
+}
+@media (max-height: 779px ){
+  .header {
+    padding: 20px 20px 20px;
+  }
 }
 @media (min-width: 768px) {
     .navbar-collapse {
@@ -25,7 +34,7 @@ ul.nav.navbar-nav li.active a {
   }
   .navbar-brand {
       position: absolute;
-      width: 17%;
+      width: 19%;
       left: 15px;
       padding-top: 15px;
   }
@@ -40,5 +49,26 @@ ul.nav.navbar-nav li.active a {
   }
   .my-logo {
     display: none!important;
+  }
+  .header {
+    padding: 0;
+  }
+}
+/* iPad */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)  {
+  .header {
+    padding: 20px 20px 20px;
+  }
+}
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 667px) {
+  .navbar-brand {
+    width: 20%;
+  }
+  .header {
+    padding: 0;
   }
 }

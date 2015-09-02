@@ -1,3 +1,7 @@
+.footer {
+  padding: 60px 20px;
+  background: #FFF;
+}
 .footer-list {
   display: inline-flex;
   display: -webkit-inline-box;
@@ -7,4 +11,30 @@
   display: inline-flex;
   -webkit-align-self: auto;
   border-top: 1px solid #000;
+}
+@media (max-width: 767px) {
+  .footer {
+    padding: 0 20px;
+  }
+}
+@media (max-height: 779px ){
+  .footer {
+    padding: 20px 20px;
+  }
+}
+/* iPad */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)  {
+  .footer {
+    padding: 20px 20px;
+  }
+}
+/* iPhone */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 667px) {
+  .footer {
+    padding: 0 20px;
+  }
 }

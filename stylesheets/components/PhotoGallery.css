@@ -1,6 +1,7 @@
 .gallery-image {
   cursor: pointer;
   padding: 7px;
+  float: left;
 }
 .gallery-image:hover {
   box-shadow: 0 0 1em #888888;
@@ -23,33 +24,26 @@
     right: 0px;
     z-index: 100;
 }
-@media (min-width: 1200px) {
-  .gallery-image {
-    float: left;
-  }
-}
-@media (max-width: 1200px) {
-  .lightbox-image {
-    top: 25%;
-  }
-}
 @media (max-width: 991px) {
-  .lightbox-image {
-    right: -25%;
-    width: 145%;
+  .gallery-image {
+    width: 50%;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 450px) {
   .lightbox-image {
     width: 95%;
     right: 3%;
+    top: 20%;
+  }
+  .gallery-image {
+    float: none;
+    width: 100%;
   }
 }
 @-webkit-keyframes fadeinImg {
     from { opacity: 0; }
     to { opacity: 1; }
 }
-
 @-moz-keyframes fadeinImg {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -68,7 +62,6 @@
     from { opacity: 0; }
     to { opacity: .75; }
 }
-
 @keyframes fadein {
     from { opacity: 0; }
     to { opacity: .75; }

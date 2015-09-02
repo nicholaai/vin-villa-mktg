@@ -23,12 +23,7 @@ var Music = React.createClass({
       <div>
         <div className="container">
           <div className="row">
-            <div className="col-md-6 override-padding-right">
-              <img
-                src="img/albumArtwork.gif"
-                className="img-responsive album-artwork" />
-            </div>
-            <div className="col-md-6 override-padding-left">
+            <div className="col-md-8 col-md-offset-2">
               {soundCloudPlayers}
             </div>
           </div>

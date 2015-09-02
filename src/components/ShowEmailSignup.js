@@ -11,7 +11,6 @@ var ShowEmailSignup = React.createClass({
     var userEmail = this.refs.email.getDOMNode().value;
     this.firebaseRefs["emails"].push(userEmail);
     this.refs.email.getDOMNode().value = '';
-
   },
   componentWillMount: function() {
     this.bindAsArray(new Firebase('website'), 'emails');

@@ -8,8 +8,8 @@ var About = React.createClass({
           <div className="col-md-4 col-md-offset-2">
             <p>
               On April 29th, 1992 in Los Angeles, CA, the very same day of
-              the notorious Rodney King riots, <strong>Vin Villa</strong>
-              was born. A Los Angeles riot in his own right, Vin is a master of his craft
+              the notorious Rodney King riots, <strong>Vin Villa</strong> was
+              born. A Los Angeles riot in his own right, Vin is a master of his craft
               who provides listeners with polished songwriting, eloquent
               vocals, and melodic production.<br/><br/>
               Raised in <strong>Long Beach</strong>, Vin faced various obstacles as an inner

@@ -6,8 +6,8 @@ var Home = React.createClass({
   render: function() {
     return (
       <img
-        src="img/vin1.gif"
-        className="img-responsive center-block" />
+        src="img/albumArtwork.gif"
+        className="img-responsive center-block album-artwork" />
     );
   }
 });

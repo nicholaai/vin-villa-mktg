@@ -31,7 +31,7 @@ var PhotoGallery = React.createClass({
     return (
       <div className="container">
         <div className="row">
-          <div className="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-6 col-sm-offset-3 col-xs-12">
+          <div className="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-xs-12">
             {lightBoxes}
           </div>
         </div>
