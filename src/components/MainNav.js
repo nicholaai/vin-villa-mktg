@@ -8,7 +8,7 @@ import '../../stylesheets/components/MainNav.css';
 var MainNav = React.createClass({
   getInitialState: function() {
     return {
-      brandLogo: 'https://cdn4.iconfinder.com/data/icons/iconset-addictive-flavour/png/social%20media/social_vimeo_V.png',
+      brandLogo: 'img/vinVillaLogo.gif',
     }
   },
   render: function() {

@@ -10,10 +10,11 @@ var VideoPicker = React.createClass({
     this.props.onVideoSelect(url);
   },
   render: function() {
-    var youTubeThumbnails = this.props.videos.map((video) => {
+    var youTubeThumbnails = this.props.videos.map((video, i) => {
       var videoImage = 'https://img.youtube.com/vi/' + video.code + '/mqdefault.jpg';
       return (
         <div
+          key={i}
           className="youtube-thumbnail-holder center-block"
           onClick={this.handleClick.bind(this, video.url)}>
             <img src={videoImage} className="youtube-thumbnail-image" />

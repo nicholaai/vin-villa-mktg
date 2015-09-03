@@ -4,6 +4,7 @@ html, body, #app {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  font-family: 'Century Gothic', 'Didact Gothic', sans-serif;;
 }
 
 /* Essentials */

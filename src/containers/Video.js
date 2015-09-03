@@ -21,7 +21,7 @@ var Video = React.createClass({
       <div className="container">
         <div className="row">
           <div className="col-sm-8 col-sm-offset-2 ">
-            <div className="embed-responsive embed-responsive-16by9">
+            <div className="embed-responsive embed-responsive-16by9" style={{ backgroundColor: '#ecf0f1' }}>
               <YouTube url={this.state.currentUrl} />
             </div>
           </div>
