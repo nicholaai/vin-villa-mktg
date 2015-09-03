@@ -58,3 +58,12 @@ html, body, #app {
     width: 400px;
   }
 }
+
+/* firefox img repsonsive fix */
+@-moz-document url-prefix() {
+  @media (max-width: 549px) {
+    .album-artwork {
+      width: 100%;
+    }
+  }
+}
