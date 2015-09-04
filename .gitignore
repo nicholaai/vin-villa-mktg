@@ -2,3 +2,5 @@
 node_modules/
 dist/
 divshot.json
+.divshot-cache
+public/build

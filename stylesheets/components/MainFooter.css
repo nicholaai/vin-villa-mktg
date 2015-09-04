@@ -17,7 +17,7 @@
     padding: 0 20px;
   }
 }
-@media (max-height: 779px ){
+@media (max-height: 801px ){
   .footer {
     padding: 20px 20px;
   }

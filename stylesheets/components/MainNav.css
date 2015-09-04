@@ -15,7 +15,7 @@
 ul.nav.navbar-nav li.active a {
   border-bottom: 1px solid black;
 }
-@media (max-height: 779px ){
+@media (max-height: 801px ){
   .header {
     padding: 20px 20px 20px;
   }

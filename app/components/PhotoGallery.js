@@ -20,7 +20,8 @@ var PhotoGallery = React.createClass({
       return (
         <Lightbox key={i}>
           <LightboxTrigger>
-            <img src={picture.thumbnail} className="center-block img-responsive gallery-image"></img>
+            <img
+              src={picture.thumbnail} className="center-block img-responsive gallery-image"></img>
           </LightboxTrigger>
           <LightboxModal>
             <img src={picture.large} className="img-responsive"></img>

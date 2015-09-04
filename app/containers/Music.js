@@ -6,25 +6,29 @@ var Music = React.createClass({
   getInitialState: function() {
     return {
       soundCloudUrls: [
-        'https://soundcloud.com/vin-villa/recognize',
-        'https://soundcloud.com/lnsent/what-we-do'
-      ]
+        'https://api.soundcloud.com/tracks/190510756',
+        'https://api.soundcloud.com/tracks/113708072'
+      ],
+      soundCloudPlayers: []
     }
   },
-  render: function () {
+  componentDidMount() {
     var soundCloudPlayers = this.state.soundCloudUrls.map((url, i) => {
       return (
         <div key={i} className="soundcloud-player center-block">
-          <SoundCloud key={url} id={url} url={url} />
+          <SoundCloud id={url + i} url={url} />
         </div>
       );
     });
+    this.setState({soundCloudPlayers:soundCloudPlayers})
+  },
+  render: function () {
     return (
       <div>
         <div className="container">
           <div className="row">
             <div className="col-md-8 col-md-offset-2">
-              {soundCloudPlayers}
+              {this.state.soundCloudPlayers}
             </div>
           </div>
         </div>

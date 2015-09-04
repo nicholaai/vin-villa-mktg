@@ -53,7 +53,7 @@ html, body, #app {
     vertical-align: top;
   }
 }
-@media (max-height: 779px ){
+@media (max-height: 801px ){
   .album-artwork {
     height: auto;
     width: 400px;
