@@ -3,4 +3,6 @@ node_modules/
 dist/
 divshot.json
 .divshot-cache
+.divshot-cache/deploy
 public/build
+npm-debug.log

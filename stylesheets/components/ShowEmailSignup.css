@@ -3,13 +3,15 @@
 }
 .form-control {
   color: #000;
+  text-align: center;
 }
 .tour-email {
   border: 1px solid #333;
 }
 .tour-btn {
-  color: #000;
-  border-color: #000;
-  margin-top: 1px;
+  color: #FFF;
+  border-color: #FFF;
+  background-color: #000;
+  margin-top: 7px;
   padding: 6px 30px;
 }

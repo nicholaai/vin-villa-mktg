@@ -2,6 +2,7 @@ var React = require('react');
 
 
 var LightboxModal = React.createClass({
+
   componentDidMount: function(){
     document.addEventListener("keydown", function (e) {
       if ( (this.props.display) && (e.keyCode === 27) ){
@@ -9,7 +10,7 @@ var LightboxModal = React.createClass({
       }
     }.bind(this));
   },
-  
+
   render: function(){
     for (var j in this.props){
       if (j !== 'children'){
@@ -20,7 +21,7 @@ var LightboxModal = React.createClass({
     if (this.props.display){
       return (
         <div>
-          <div className="lightbox-overlay" onClick={this.props.closeLightbox} />
+          <div className="lightbox-overlay" onClick={this.props.closeLightbox} onTouchStart={this.props.closeLightbox} />
           <div className="lightbox-image">
             {this.props.children}
           </div>

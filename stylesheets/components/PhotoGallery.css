@@ -11,18 +11,24 @@
     top: 0;
     box-shadow: 0 1px 5px #333;
     z-index: 101;
-    animation: fadeinImg .3s ease-in;
+    -webkit-animation: fadeinImg .3s ease-in;
+    -moz-animation:    fadeinImg .3s ease-in;
+    -o-animation:      fadeinImg .3s ease-in;
+    animation:         fadeinImg .3s ease-in;
 }
 .lightbox-overlay {
     background: black;
     opacity: 0.75;
-    animation: fadein .3s ease-in;
     position: fixed;
     top: 0px;
     bottom: 0px;
     left: 0px;
     right: 0px;
     z-index: 100;
+    -webkit-animation: fadein .3s ease-in;
+    -moz-animation:    fadein .3s ease-in;
+    -o-animation:      fadein .3s ease-in;
+    animation:         fadein .3s ease-in;
 }
 @media (max-width: 991px) {
   .gallery-image {
@@ -40,6 +46,23 @@
     width: 100%;
   }
 }
+/* iPad */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)  {
+  .lightbox-image {
+    right: 3%;
+  }
+}
+/* iPhone */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 667px) {
+  .lightbox-image,
+  .lightbox-overlay {
+    display: none;
+  }
+}
 @-webkit-keyframes fadeinImg {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -48,19 +71,26 @@
     from { opacity: 0; }
     to { opacity: 1; }
 }
-
+@-o-keyframes fadeinImg {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
 @keyframes fadeinImg {
     from { opacity: 0; }
     to { opacity: 1; }
 }
+
 @-webkit-keyframes fadein {
     from { opacity: 0; }
     to { opacity: .75; }
 }
-
 @-moz-keyframes fadein {
     from { opacity: 0; }
     to { opacity: .75; }
+}
+-o-keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: .75; }
 }
 @keyframes fadein {
     from { opacity: 0; }

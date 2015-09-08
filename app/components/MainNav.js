@@ -8,7 +8,7 @@ import '../../stylesheets/components/MainNav.css';
 var MainNav = React.createClass({
   getInitialState: function() {
     return {
-      brandLogo: 'img/vinVillaLogo.gif',
+      brandLogo: 'img/vinVillaLogo.png',
     }
   },
   render: function() {
@@ -17,7 +17,6 @@ var MainNav = React.createClass({
         brand={
           <Link to="home">
             <img src={this.state.brandLogo} className="my-logo"></img>
-            <div className="my-logo-text">Vin Villa</div>
           </Link>
         }
         toggleNavKey={0}
