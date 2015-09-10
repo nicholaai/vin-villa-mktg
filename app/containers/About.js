@@ -26,15 +26,15 @@ var About = React.createClass({
               Life changed forever in the summer of 2012 when Vin received
               a letter of acceptance to the <strong>University of Southern California</strong>.
               Capitalizing on this tremendous opportunity, Vin
-              earned his Bachelor's Degree with a double major in <strong>Music
-              Industry</strong> and <strong>American Studies</strong> December 2014.
+              earned his Bachelor's Degree with a major in <strong>American Studies
+            </strong> and minor in <strong>Music Industry</strong> in December 2014.
              </p>
           </div>
           <div className="col-md-4">
             <p>
               Thanks to years of hard work and dedication, his songwriting
               and production skills have afforded him opportunities to work
-              with <strong>Juicy J, Rapper Big Pooh, Dae One, and Melat</strong>. The charismatic
+              with <strong>Juicy J, Rapper Big Pooh, Taje, and Melat</strong>. The charismatic
               youth from humble beginnings has been cosigned by well-known
               industry producers, <strong>THX (Snoop Dogg – Don’t Stop) and Ric Rude
               (Destiny’s Child – Cater 2 U)</strong>. Long Beach native and legendary
@@ -42,8 +42,8 @@ var About = React.createClass({
               freestyled together during a chance meeting at a recording studio.
               A gifted performer, Vin has recently rocked shows at the Terrace,
               The Key Club, The M Bar, Cal State Long Beach, and USC. He has
-              opened up for artists such as <strong>Casey Veggies, Ghostface Killa,
-              and Tech N9ne’s Quest Cru</strong>.<br/><br/>
+              opened up for artists such as <strong>Casey Veggies, Raekwon,
+              and Tech N9ne's Strange Music affiliates Quest Cru</strong>.<br/><br/>
               Since becoming a college grad, Vin has turned his full focus
               towards his music career with <strong>FOREVER.FREEDOM.DREAMING</strong> set to
               drop late 2015.<br/><br/>
