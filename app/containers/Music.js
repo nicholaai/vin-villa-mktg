@@ -1,35 +1,28 @@
 var React = require('react');
-var SoundCloud = require('react-soundcloud-widget');
-import '../../stylesheets/containers/Music.css';
+var SoundCloud = require('../components/SoundCloud');
 
 var Music = React.createClass({
   getInitialState: function() {
     return {
-      soundCloudUrls: [
-        'https://api.soundcloud.com/tracks/190510756',
-        'https://api.soundcloud.com/tracks/113708072'
-      ],
-      soundCloudPlayers: []
+      songs: [
+        {url: 'https://w.soundcloud.com/player/?url=https://api.soundcloud.com/tracks/190510756'},
+        {url: 'https://w.soundcloud.com/player/?url=https://api.soundcloud.com/tracks/113708072'}
+      ]
     }
   },
-  componentDidMount() {
-    var soundCloudPlayers = this.state.soundCloudUrls.map((url, i) => {
+  render: function () {
+    var soundCloudPlayers = this.state.songs.map((song, i) => {
       return (
-        <div key={i} className="soundcloud-player center-block">
-          <SoundCloud id={url + i} url={url} />
+        <div key={song + i} className="col-md-8 col-md-offset-2">
+          <SoundCloud url={song.url} />
         </div>
       );
     });
-    this.setState({soundCloudPlayers:soundCloudPlayers})
-  },
-  render: function () {
     return (
       <div>
         <div className="container">
           <div className="row">
-            <div className="col-md-8 col-md-offset-2">
-              {this.state.soundCloudPlayers}
-            </div>
+            {soundCloudPlayers}
           </div>
         </div>
       </div>
