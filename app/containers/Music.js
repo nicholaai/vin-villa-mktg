@@ -6,7 +6,7 @@ var Music = React.createClass({
     return {
       songs: [
         {url: 'https://w.soundcloud.com/player/?url=https://api.soundcloud.com/tracks/190510756'},
-        {url: 'https://w.soundcloud.com/player/?url=https://api.soundcloud.com/tracks/113708072'}
+        {url: 'https://w.soundcloud.com/player/?url=https://api.soundcloud.com/tracks/203160207'}
       ]
     }
   },
